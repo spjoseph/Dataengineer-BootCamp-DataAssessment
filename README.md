@@ -10,14 +10,14 @@ I suspect the cause was version incompatibility, as it was mentioned in the link
 the application, "sbt package" command was used on my laptop in the project's diretory. The resuting jar file was copied to sandbox-hdp and ran the appliction through spark-ubmit
 command.
 
-Scala Application:
+Scala and Spark Application:
 
 1. Cloned the files from the GIT repository to my own GIT repository and also local machine.
 2. Uploaded the files on Data-Spark folder by using Ambari to HDFS.
 3. Developed a scala application that can create  Dataframe separately for these input csv files.
 
 Result Actual:
-1. Created Hive tables in HDP cluster on  hive.
+1. Created Hive tables in HDP cluster on  hive and output a dataframe contains drierid,name,total hors logged and total miles logged.
 You may see the jar file of this task 1 in https://github.com/spjoseph/Dataengineer-BootCamp-DataAssessment/blob/master/Dataengineer-BootCamp-DataAssessment/HiveSparkLoad/target/scala-2.11/hivesparkload_2.11-1.0.jar.
 
 
@@ -25,6 +25,15 @@ You may see the jar file of this task 1 in https://github.com/spjoseph/Dataengin
  spark-submit --class CSVDataLoad  --master local ./hivesparkload_2.11-1.0.jar
  
 I did not do sbt asembly so it may cause problems if supporting jar files like spark jars,hive etc are not available in the system you run.
+
+
+HBase Application:
+
+Learnt Hbase and tried to write the Scala application to load dangerous_driver.csv file to Hbase.
+I created Hbase table uing hbe-shell 
+Loaded csv data to a dataframe in Spark and assigned to df variable.
+I tried to use the schema of dataframe and write to Habse table.
+I have issues in connecting hbase and spark.
 
 
 Challenges:
