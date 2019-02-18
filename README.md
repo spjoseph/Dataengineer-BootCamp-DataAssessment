@@ -18,6 +18,8 @@ Scala Application:
 
 Result Actual:
 1. Created Hive tables in HDP cluster on  hive.
+You may see the jar file o this task 1 in https://github.com/spjoseph/Dataengineer-BootCamp-DataAssessment/blob/master/Dataengineer-BootCamp-DataAssessment/HiveSparkLoad/target/scala-2.11/hivesparkload_2.11-1.0.jar
+
 
 Challenges:
 
