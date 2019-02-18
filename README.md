@@ -13,7 +13,7 @@ command.
 Scala and Spark Application:
 
 1. Cloned the files from the GIT repository to my own GIT repository and also local machine.
-2. Uploaded the files on Data-Spark folder by using Ambari to HDFS.
+2. Uploaded the source csv files driver .csv,timesheet.csv,truck_event_partition.csv manually  by using Ambari to HDFS.
 3. Developed a scala application that can create  Dataframe separately for these input csv files.
 
 Result Actual:
